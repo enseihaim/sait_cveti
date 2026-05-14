@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Світ квітів</title>
+    <style>
+        body {
+            background-color: #fdf2f8;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #444;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        header {
+            background-color: #fb7185;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        h1 {
+            margin: 0;
+            animation: fadeInDown 1.5s ease-out;
+        }
+
+        nav {
+            text-align: center;
+            background: #ffe4e6;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #be123c;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #fb7185;
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .flower-img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border: 5px solid #ffe4e6;
+            border-radius: 15px;
+            display: block;
+            margin: 15px auto;
+            transition: transform 0.3s;
+        }
+
+        .flower-img:hover {
+            transform: scale(1.05);
+        }
+
+        .caption {
+            text-align: center;
+            font-style: italic;
+            color: #888;
+            margin-bottom: 20px;
+        }
+
+        .video-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #999;
+        }
+
+        @media (max-width: 600px) {
+            .container { margin: 10px; }
+            h1 { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Чарівний світ квітів</h1>
+    </header>
+
+    <nav>
+        <a href="#about">Про квіти</a>
+        <a href="#video">Відео</a>
+        <a href="https://uk.wikipedia.org/wiki/Квітка" target="_blank">Вікіпедія про квіти</a>
+    </nav>
+
+    <div class="container">
+        
+        <h2 id="about">Чому ми любимо квіти?</h2>
+        <p>Квіти — це не просто рослини, це справжній витвір мистецтва природи. Вони дарують нам чудовий аромат, прикрашають наші оселі та піднімають настрій у будь-яку пору року.</p>
+
+        <img src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Рожеві квіти" class="flower-img">
+        <p class="caption">Ніжні весняні півонії</p>
+
+        <h2>Популярні види</h2>
+        <p>Існує тисячі видів квітів, але деякі з них особливо популярні серед садівників: троянди, тюльпани, лілії та лаванда.</p>
+
+        <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Жовта квітка" class="flower-img">
+        <p class="caption">Сонячна квітка на фоні літа</p>
+
+        <h2 id="video">Хвилинка релаксу</h2>
+        <div class="video-container">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/S9VzT6Fp2uY" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>© 2024 Моя квіткова сторінка</p>
+    </footer>
+
+</body>
+</html>
